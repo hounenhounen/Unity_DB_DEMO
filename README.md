@@ -15,10 +15,11 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* Mac OS X 10.10.5(Yosemite)
-* Unity ver. 5.3.5f1
-* MonoDevelop-Unity ver. 5.9.6
-* NCMB UnitySDK v2.2.0
+* Mac OS Mojave
+* Unity 2019.1.0f2
+* Visual Studio ver.8.1.2
+* Mono ver.5.18 
+* NCMB UnitySDK v4.0.1
 
 ※上記内容で動作確認をしています。
 
