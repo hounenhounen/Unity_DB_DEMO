@@ -39,9 +39,9 @@
 
 ![画像5](/readme-img/005.png)
 
-### 2. [GitHub](https://github.com/hounenhounen/Unity_DB_DEMO.git)からサンプルプロジェクトのダウンロード
+### 2. [GitHub](https://github.com/NIFCLOUD-mbaas/Unity_DB_DEMO.git)からサンプルプロジェクトのダウンロード
 
-* この画面([GitHub](https://github.com/hounenhounen/Unity_DB_DEMO.git))の![画像10](/readme-img/010.png)ボタンをクリックし、さらに![画像14](/readme-img/014.PNG)ボタンをクリックしてサンプルプロジェクトをMacにダウンロードします
+* この画面([GitHub](https://github.com/NIFCLOUD-mbaas/Unity_DB_DEMO.git))の![画像10](/readme-img/010.png)ボタンをクリックし、さらに![画像14](/readme-img/014.PNG)ボタンをクリックしてサンプルプロジェクトをMacにダウンロードします
 
 ### 3. Unityでアプリを起動
 
