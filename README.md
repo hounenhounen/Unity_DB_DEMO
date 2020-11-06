@@ -74,6 +74,49 @@
 * 保存に成功したら、[ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボードから「データストア」を確認してみましょう！
 * `TestClass`という保存用クラスが作成され、その中にデータが確認できます
 
+##### iOS端末へのビルド
+
+* iOSビルド手順は以下のとおりです。  
+iOS端末でビルドを行うには、Unityで.xcodeprojファイルを作成します。
+- 「Build Settings」へ戻り、Platformで「iOS」を選択 -> 「Switch Platform」をクリックします。
+
+<img src="readme-img/unity_ios_00001.png" width="700" alt="iOS" />
+
+
+- ボタンが「Build」に変わったらクリックします。アプリ名を入力するとビルドが開始されるので、完了したらXcodeで開いてください。
+
+- XcodeでPush Notificationの追加とプロビジョニングファイルの設定を行う必要があります。[iOSのドキュメント](/doc/current/push/basic_usage_ios.html)の「5.1 Xcodeでの対応」を実装してください。
+
+
+###### Xcodeの追加設定
+
+  * iOSであり、Unity SDK v4.0.4以上の場合、Xcode側にて「WebKit.framework」「UserNotifications.framework」を追加する必要があります。
+  * Xcodeで「Unity-iPhone」-> General -> TARGETで「UnityFramework」を選択します。追加されているライブラリ一覧の下にある「＋」をクリックします。
+  <img src="readme-img/add_frameworks_UnitySDK4.0.4.png" width="612"  alt="フレームワークの追加" />
+  * 検索窓にて「Web」と入力し、「WebKit.framework」があるので選択しAddをクリックします。
+
+<img src="readme-img/Webview_flow2.png" width="420" height="480" alt="リッチプッシュ設定方法2" />
+
+* 「UserNotifications.framework」ライブラリも同じように検索して追加します
+
+<img src="readme-img/unity_ios_00003.png" width="420" alt="iOS" />
+
+ライブラリ一覧に追加されていることが確認できれば設定完了です。
+
+※注意１: Unity SDK v4.2.0以上を使用している場合、上の２つに加えて「AuthencationServices.framework」も追加する必要があります。
+
+<img src="readme-img/xcode_settings_005.png" width="680px;"/>
+
+* 「Build Phases」 タブで「AuthenticationServices.framework」を「Optional」にします。  
+<img src="readme-img/optional_AuthenticationServices.framework.png" width="680px;"/>
+
+※注意２： Unity 2019.3未満の場合は、以下の画像のように TARGET->「Unity-iPhone」でフレームワークを追加するようにしてください。
+こちらも「WebKit.framework」「UserNotifications.framework」「AuthenticationServices.framework」を追加する必要があります。
+
+<img src="readme-img/target_Unity-iPhone.png" width="200px;"/>
+
+- 上記が完了しましたら、iOS動作確認は可能となります。
+
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
 
