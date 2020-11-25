@@ -85,7 +85,7 @@ iOS端末でビルドを行うには、Unityで.xcodeprojファイルを作成�
 
 - ボタンが「Build」に変わったらクリックします。アプリ名を入力するとビルドが開始されるので、完了したらXcodeで開いてください。
 
-- XcodeでPush Notificationの追加とプロビジョニングファイルの設定を行う必要があります。[iOSのドキュメント](/doc/current/push/basic_usage_ios.html)の「5.1 Xcodeでの対応」を実装してください。
+- XcodeでPush Notificationの追加とプロビジョニングファイルの設定を行う必要があります。[iOSのドキュメント](https://mbaas.nifcloud.com/doc/current/push/basic_usage_ios.html#Xcodeでの対応)の「5.1 Xcodeでの対応」を実装してください。
 
 
 ###### Xcodeの追加設定
